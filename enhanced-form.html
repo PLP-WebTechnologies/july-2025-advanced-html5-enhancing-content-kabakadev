@@ -6,40 +6,69 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Tables </h1>
-    <table>
-        <thead>
-            <tr>
-                <th>mellow</th>
-                <th>Raspberry</th>
-                <th>Networks</th>
-                <th>Snapdragon</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>GPU</td>
-                <td>Processor</td>
-                <td>Heat sink</td>
-                <td>Ram</td>
-            </tr>
-        </tbody>
-    </table>
-    <form action="" required method="POST">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" placeholder="enter the first name" name="firstName">
+    <header>
+        <h1>HTML5 feature Showcase</h1>
+        <p>Includes tables, lists, media and a validated form</p>
+    </header>
+    <main>
+        <!-- Table section-->
+         <section>
+            <h2>Device Components</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>mellow</th>
+                        <th>Raspberry</th>
+                        <th>Networks</th>
+                        <th>Snapdragon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GPU</td>
+                        <td>Processor</td>
+                        <td>Heat sink</td>
+                        <td>Ram</td>
+                    </tr>
+                </tbody>
+            </table>
+         </section>
+         <!-- Media Section -->
+          <h2>Media examples</h2>
+          <p>Here is an image:</p>
+          <img src="https://unsplash.com/photos/a-slice-of-pie-sits-on-a-diner-table-hAkJ4JgdVjo" alt="some dark image" width="300">
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" placeholder="enter the lastname" name="lastName">
+          <p>Sample audio:</p>
+          <audio controls>z
+            <source src="cinematic-hip-hop-vlog-music-349853.mp3"/> Your browser does not support the audio element
+          </audio>
+          <p>Sample video</p>
+          <video controls width="320">
+            <source src="She_s_dead,_Peter_Griffin(360p).mp4" type="video/mp4" />
+            Your browser does not support the video tag
+          </video>
+             <!-- Form Section-->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <label for="firstName">First Name:</label>
+            <input required type="text" id="firstName" placeholder="enter the first name" name="firstName">
+    
+            <label for="lastName">Last Name:</label>
+            <input required type="text" id="lastName" placeholder="enter the lastname" name="lastName">
+    
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email" required autocomplete="email">
+    
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+    
+            <button type="submit">Submit</button>
+    
+        </form>
+    </section>
+    </main>
 
-        <label for="email">email:</label>
-        <input type="text" id="email" name="email">
-
-        <label for="password">password:</label>
-        <input type="password" id="password" name="password">
-
-        <button type="submit">Submit</button>
-
-    </form>
+   
 </body>
 </html>
